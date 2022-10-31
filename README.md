@@ -1,2 +1,2 @@
 # javascript_classes
- backup of some javascrip exercises
+ backup of some javascript exercises
