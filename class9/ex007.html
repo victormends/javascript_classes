@@ -7,15 +7,28 @@
     <title>Document</title>
     <style>
         body {
-            background-color: rgb(255, 147, 250);
-            color: rgb(35, 138, 255);
+            background-color: #ff93fa;
+            color: #238aff;
             font: normal 18pt arial;
         }
     </style>
 </head>
 <body>
-    <h1>studies about DOM</h1>
+    <h1>studies about <b>DOM</b></h1>
     <p>result</p>
-    <div>clickable</div>
+    <p class="aaa">learning how to use <b>DOM</b> in JavaScript</p>
+    <div id="msg">link</div>
+    <script>
+        window.document.write(window.document.URL + "<br><br>")
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.write('its written like this: ' + p1.innerText + "<br><br>")
+        var d = window.document.getElementById('msg')
+        var a = window.document.getElementById('aaa')
+        d.style.background = '#f7c41c';
+        d.innerText = "waiting..."
+        var a = window.document.querySelector('p.aaa')
+        a.style.background = "#9e5e9b"
+
+    </script>
 </body>
 </html>
