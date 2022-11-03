@@ -7,26 +7,37 @@
     <title>Document</title>
     <style>
         div#area {
-            background: rgb(76, 0, 255);
+            background: #4c00ff;
             color: white;
             width: 200px;
             height: 200px;
             line-height: 200px;
             text-align: center;
             box-sizing: border-box;
+            user-select: none;
+            transition: 0.3s;
         }
     </style>
 </head>
 <body>
-    <div id="area" onclick="click()" onmouseenter="enter()" onmouseout="out()">
+    <div id="area">
         interact...
     </div>
 
     <script>
         var a = window.document.getElementById('area')
+        a.addEventListener('mousedown', click2)
+        a.addEventListener('mouseup', click3)
+        a.addEventListener('mouseenter', enter)
+        a.addEventListener('mouseout', out)
 
-        function click() {
+        function click2() {
             a.innerText = 'Clicked!'
+            a.style.background = 'red'
+        }
+        function click3() {
+            a.innerText = 'interact...!'
+            a.style.background = '#4c00ff'
         }
         function enter() {
             a.innerText = 'Entered!'
