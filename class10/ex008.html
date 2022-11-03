@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.area {
+        div#area {
             background: rgb(76, 0, 255);
             color: white;
             width: 200px;
@@ -18,13 +18,21 @@
     </style>
 </head>
 <body>
-    <div class='area' onmouseover=click()>
+    <div id="area" onclick="click()" onmouseenter="enter()" onmouseout="out()">
         interact...
     </div>
+
     <script>
+        var a = window.document.getElementById('area')
+
         function click() {
-            var a = window.document.getElementsByClassName('area')
-            a.innerText = "clicked!"
+            a.innerText = 'Clicked!'
+        }
+        function enter() {
+            a.innerText = 'Entered!'
+        }
+        function out() {
+            a.innerText = 'Out!'
         }
     </script>
 </body>
