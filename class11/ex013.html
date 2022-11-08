@@ -8,8 +8,23 @@
 </head>
 <body>
     <h1>Ticket System</h1>
-    car speed: <input type="number" name="txtvel" id="txtvel">kmph
-    <input type="button" value="verify">
+    car speed: <input type="number" name="txtspd" id="txtspd">kmph
+    <input type="button" value="verify" onclick="calculate()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calculate() {
+            var txts = window.document.querySelector('input#txtspd')
+            var res = window.document.querySelector('div#res')
+            var spd = Number(txts.value)
+            res.innerHTML = `<p>Your current speed is <b>${spd}kmph</b></p>`
+            if (spd > 60) {
+                res.innerHTML = `<p>oh well, you've got a ticket cuz of high speed</b></p>`
+            }
+            res.innerHTML += `<p>Drive carefully.`
+        }
+    </script>
 </body>
 </html>
 
