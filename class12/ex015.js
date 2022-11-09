@@ -1,4 +1,6 @@
-var hour = 22  
+var now = new Date()
+var hour = now.getHours()
+console.log(`now, at the time of ${hour} hours., playing The Beatles:`)
 if (hour < 12) {
     console.log('im oonly sleeeping, tutu tu turu')
 } else if (hour > 21) {
