@@ -20,7 +20,7 @@
             var spd = Number(txts.value)
             res.innerHTML = `<p>Your current speed is <b>${spd}kmph</b></p>`
             if (spd > 60) {
-                res.innerHTML = `<p>oh well, you've got a ticket cuz of high speed</b></p>`
+                res.innerHTML += `<p>oh well, you've got a ticket cuz of high speed</b></p>`
             }
             res.innerHTML += `<p>Drive carefully.`
         }
