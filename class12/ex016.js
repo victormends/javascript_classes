@@ -2,7 +2,7 @@ var now = new Date()
 var weekDay = now.getDay()
 console.log(weekDay)
 
-switch(dayWeek) {
+switch(weekDay) {
     case 0:
         console.log('sunday')
         break
