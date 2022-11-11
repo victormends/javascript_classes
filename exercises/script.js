@@ -4,9 +4,8 @@ function load() {
     var img = window.document.getElementById('img')
     var pic = window.document.getElementById('pic')
     var date = new Date()
-    // var hour = date.getHours() + ':' + date.getMinutes();
-var hour=11
-    if (hour < 12) {
+    var hour = date.getHours() // + ':' + date.getMinutes();
+    if (hour >= 0 && hour <= 12) {
         msg.innerHTML = `Now we are at ${hour}am`
     } else {
         msg.innerHTML = `Now we are at ${hour}pm`
