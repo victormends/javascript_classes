@@ -9,10 +9,18 @@
 </head>
 <body>
     <header>
-        <h1>Time of the day</h1>
+        <h1>Counter</h1>
     </header>
     <section>
-
+        <div id="data">
+            <p>start: <input type="number" name="start" id="txtstart" min="0"></p>
+            <p>stop: <input type="number" name="end" id="txtend" min="0"></p>
+            <p>pace: <input type="number" name="pace" id="txtpace" min="0"></p>
+            <p><input type="button" value="count" onclick="count()"></p>
+        </div>
+       <div id="res">
+           Preparing the counting...
+       </div>
     </section>
     <footer>
         <p>&copy; Lorem ipsum dolor sit amet consectetur</p>
