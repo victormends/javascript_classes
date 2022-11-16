@@ -56,10 +56,6 @@ function add() {
 
 }
 
-      
-
-
-
     }
 
     let tot = values.length
